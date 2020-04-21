@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Berhasil</title>
+  </head>
+  <body>
+    <h1>Ini halaman ke dua</h1>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Birthdate</th>
+        <th>Location</th>
+      </tr>
+      {% for item in istekler %}
+      <tr>
+        <td>{{ Person.name }}</td>
+        <td>{{ Person.email }}</td>
+        <td>{{ Person.birth_date }}</td>
+        <td>{{ Person.location }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+  </body>
+</html>
