@@ -1,4 +1,4 @@
 from django.contrib import admin
-from cobaapp.models import Person
+from cobaapp.models import Employee
 # Register your models here.
-admin.site.register(Person)
+admin.site.register(Employee)

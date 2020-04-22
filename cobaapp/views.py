@@ -7,6 +7,6 @@ def index(request):
 def dua(request):
     return render(request,'cobaapp/dua.html')
 
-def identity(request):
-    istekler = Person.objects.all()
+def people(request):
+    istekler = Employee.objects.all()
     return render(request, 'dua.html', locals())
